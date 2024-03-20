@@ -13,6 +13,18 @@ public class BoundaryAcheterProduit {
 	}
 
 	public void acheterProduit(String nomAcheteur) {
-		// TODO Ã  completer
+		if(!controlAcheterProduit.VerifierIdentite(nomAcheteur)) {
+			System.out.println("Je suis désolé, " + nomAcheteur + " mais il faut être un habitant du village pour commercer ici.");
+		}
+		else {
+			System.out.println("Quel produit voulez-vous achetez ?");
+			String produit = scan.next();
+			if(!ControlAcheterProduit.VerifierProduit(produit)) {
+				System.out.println("Désolé, personne ne vend ce produit au marché.");
+			}
+			else {
+				
+			}
+		}
 	}
 }
