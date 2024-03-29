@@ -19,7 +19,8 @@ public class BoundaryAcheterProduit {
 		else {
 			System.out.println("Quel produit voulez-vous achetez ?");
 			String produit = scan.next();
-			if(!ControlAcheterProduit.VerifierProduit(produit)) {
+			boolean bool = controlAcheterProduit.VerifierProduit(produit);
+			if(bool) {
 				System.out.println("Désolé, personne ne vend ce produit au marché.");
 			}
 			else {
