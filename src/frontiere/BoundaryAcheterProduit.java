@@ -24,7 +24,7 @@ public class BoundaryAcheterProduit {
 				System.out.println("Désolé, personne ne vend ce produit au marché.");
 			}
 			else {
-				
+				System.out.println("ok");
 			}
 		}
 	}
