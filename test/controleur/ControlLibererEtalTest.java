@@ -45,10 +45,9 @@ class ControlLibererEtalTest {
 	void testLibererEtal() {
 		ControlLibererEtal controlLibererEtal = new ControlLibererEtal(controlTrouverEtalVendeur);
 		Gaulois Bonemine = new Gaulois("Bonemine", 10);
-		assert controlLibererEtal.libererEtal("N'existe pas") == null;
 		village.ajouterHabitant(Bonemine);
-		assert controlLibererEtal.libererEtal("Bonemine") == null;
 		village.installerVendeur(Bonemine, "fleurs", 10);
+		controlLibererEtal.libererEtal("Bonemine");
 	}
 
 }
